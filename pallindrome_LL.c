@@ -87,6 +87,7 @@ int isPalin(listnode* A){
 
 
 /*
+// RECURSIVE SOLUTION
 
 bool isPallindrome(listnode** first, listnode* last){
     // 1->2->3->2->1->X
