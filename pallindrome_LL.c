@@ -31,9 +31,6 @@ void addNode(listnode* A, int i){
 	t->next = temp;
 }
 
-/*
- * Complete the function below.
- */
 
 listnode* reverse(listnode* head)
 {
@@ -87,6 +84,40 @@ int isPalin(listnode* A){
     return 1;
 
 }
+
+
+/*
+
+bool isPallindrome(listnode** first, listnode* last){
+    // 1->2->3->2->1->X
+    if(last == NULL)
+        return true;
+    
+    bool res = isPallindrome(first,last->next);
+
+    if(res == false)
+        return false;
+    
+    bool ans = (*first)->val == last->val;
+
+    *first = (*first)->next;
+
+    return ans;
+}
+
+
+int isPalin(listnode* A){
+    listnode* head = A;
+    if(isPallindrome(&head,A))
+        return 1;
+    else
+        return 0;
+
+}
+
+
+*/
+
 int main(){
 	int count = 0;
 	int i;
